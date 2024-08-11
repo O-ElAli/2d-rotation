@@ -9,16 +9,21 @@ namespace _2d_rotation
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
+        private Stick stick;
+
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
+            
         }
 
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+
+            stick = new Stick();
 
             base.Initialize();
         }
@@ -37,6 +42,8 @@ namespace _2d_rotation
 
             // TODO: Add your update logic here
 
+            stick.update();
+
             base.Update(gameTime);
         }
 
@@ -45,6 +52,12 @@ namespace _2d_rotation
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
+            _spriteBatch.Begin();
+
+            stick.Draw(_spriteBatch);
+
+            _spriteBatch.End();
+
 
             base.Draw(gameTime);
         }

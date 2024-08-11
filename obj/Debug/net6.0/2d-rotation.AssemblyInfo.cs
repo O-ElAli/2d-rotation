@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("2d-rotation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7284afc44fe1a9c96a0afecb30fd52d511c6b5d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("2d-rotation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("2d-rotation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
